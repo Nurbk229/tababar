@@ -31,5 +31,10 @@ class Task {
     return task;
   }
 
-
+  static toMap(Task taskModel) {
+    return {
+      columnTaskName: taskModel.taskName,
+      columnTaskValueName: taskModel.isComplete ? 1 : 0
+    };
+  }
 }
