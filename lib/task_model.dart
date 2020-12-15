@@ -7,11 +7,7 @@ class Task {
 
   Task(this.taskName, this.isComplete);
 
-  static final String dbName = 'task.db';
-  static final String tableName = 'tasks';
-  static final String columnIdName = 'id';
-  static final String columnTaskName = 'name';
-  static final String columnTaskValueName = 'value';
+
 
   static final String sqlCreateTable = '''CREATE TABLE $tableName (
   $columnIdName INTEGER PRIMARY KEY AUTOINCREMENT ,
